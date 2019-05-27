@@ -80,7 +80,7 @@ public class OrderController {
 
     /*支付宝支付模块*/
     /*支付*/
-        @RequestMapping("pay.do")
+        @RequestMapping("2.do")
     public ServerResponse aliPay(HttpSession session, Long orderNo) {
         //判断登录状态
         ServerResponse sr = orderService.aliPay(session,orderNo);

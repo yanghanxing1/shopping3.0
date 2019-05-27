@@ -54,6 +54,4 @@ public class CategoryManagerController {
         //查询子类别
         return categoryService.getAllChilds(parentId);
     }
-
-
 }
