@@ -1,19 +1,12 @@
 package com.neuedu.controller.portal;
 
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.neuedu.common.Const;
-import com.neuedu.common.ResponseCode;
 import com.neuedu.common.ServerResponse;
-import com.neuedu.dao.UserInfoMapper;
-import com.neuedu.log.NeueduAnalyticsEngineSDK;
+
 import com.neuedu.pojo.UserInfo;
-import com.neuedu.service.ICategoryService;
 import com.neuedu.service.IUserService;
 import com.neuedu.util.IpUtils;
-import com.neuedu.util.JsonUtils;
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-/**
- * @Author teacher.zhang
- */
 @RestController
 @RequestMapping(value = "/portal/user/")
 public class UserController {
